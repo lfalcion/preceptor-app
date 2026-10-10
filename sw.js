@@ -1,5 +1,5 @@
-const CACHE = 'preceptor-adc50c8105';
-const FILES = ["","assets/index-C2IRkSt9.js","assets/backend-e0r3cwu9.js","assets/db-EdKewTVZ.js","assets/sqlite-DDw7Qi9P.js","assets/index-m7S-BcA2.css","assets/sql-wasm-browser-DfANybxk.wasm","favicon.svg","fonts/BodoniModa-var.ttf","fonts/EBGaramond-Italic-var.ttf","fonts/EBGaramond-var.ttf","fonts/OFL-BodoniModa.txt","fonts/OFL-EBGaramond.txt","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons.svg","manifest.webmanifest","seed.db"];
+const CACHE = 'preceptor-2193fc0cb3';
+const FILES = ["","assets/index-CucKBfz8.js","assets/backend-D0cmTMWe.js","assets/db-EdKewTVZ.js","assets/sqlite-DtpGSwng.js","assets/index-m7S-BcA2.css","assets/sql-wasm-browser-DfANybxk.wasm","favicon.svg","fonts/BodoniModa-var.ttf","fonts/EBGaramond-Italic-var.ttf","fonts/EBGaramond-var.ttf","fonts/OFL-BodoniModa.txt","fonts/OFL-EBGaramond.txt","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons.svg","manifest.webmanifest","seed.db"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new URL(f, self.registration.scope).href))));
   self.skipWaiting();
