@@ -1,4 +1,4 @@
-const CACHE = 'preceptor-4b8a00ce76';
+const CACHE = 'preceptor-a7b68f5a01';
 const FILES = ["","assets/index-BJHYbXeY.js","assets/backend-COUy_PtZ.js","assets/db-EdKewTVZ.js","assets/sqlite-QTIv-CJ2.js","assets/index-m7S-BcA2.css","assets/sql-wasm-browser-DfANybxk.wasm","favicon.svg","fonts/BodoniModa-var.ttf","fonts/EBGaramond-Italic-var.ttf","fonts/EBGaramond-var.ttf","fonts/OFL-BodoniModa.txt","fonts/OFL-EBGaramond.txt","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons.svg","manifest.webmanifest","seed.db"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new URL(f, self.registration.scope).href))));
